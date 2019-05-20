@@ -1,0 +1,113 @@
+C:\Users\user1>cd abc
+
+C:\Users\user1\abc>cd new-test-1
+
+C:\Users\user1\abc\new-test-1>git config --global --list
+user.name=pnvijay123
+user.password=squading@123
+user.email=pnvijay.research@gmail.com
+
+C:\Users\user1\abc\new-test-1>git clone https://github.com/pnvijay123/test-1.git
+Cloning into 'test-1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+
+C:\Users\user1\abc\new-test-1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 4404-B8DE
+
+ Directory of C:\Users\user1\abc\new-test-1
+
+05/20/2019  10:50 AM    <DIR>          .
+05/20/2019  10:50 AM    <DIR>          ..
+05/20/2019  10:50 AM    <DIR>          test-1
+               0 File(s)              0 bytes
+               3 Dir(s)  398,895,800,320 bytes free
+
+C:\Users\user1\abc\new-test-1>cd test-1
+
+C:\Users\user1\abc\new-test-1\test-1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 4404-B8DE
+
+ Directory of C:\Users\user1\abc\new-test-1\test-1
+
+05/20/2019  10:50 AM    <DIR>          .
+05/20/2019  10:50 AM    <DIR>          ..
+05/20/2019  10:50 AM                40 readme.txt
+               1 File(s)             40 bytes
+               2 Dir(s)  398,895,800,320 bytes free
+
+C:\Users\user1\abc\new-test-1\test-1>cd..
+
+C:\Users\user1\abc\new-test-1>git checkout fb1
+error: pathspec 'fb1' did not match any file(s) known to git
+
+C:\Users\user1\abc\new-test-1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 4404-B8DE
+
+ Directory of C:\Users\user1\abc\new-test-1
+
+05/20/2019  10:50 AM    <DIR>          .
+05/20/2019  10:50 AM    <DIR>          ..
+05/20/2019  10:50 AM    <DIR>          test-1
+               0 File(s)              0 bytes
+               3 Dir(s)  398,894,383,104 bytes free
+
+C:\Users\user1\abc\new-test-1>cd test-1
+
+C:\Users\user1\abc\new-test-1\test-1>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 4404-B8DE
+
+ Directory of C:\Users\user1\abc\new-test-1\test-1
+
+05/20/2019  10:50 AM    <DIR>          .
+05/20/2019  10:50 AM    <DIR>          ..
+05/20/2019  10:50 AM                40 readme.txt
+               1 File(s)             40 bytes
+               2 Dir(s)  398,893,563,904 bytes free
+
+C:\Users\user1\abc\new-test-1\test-1>copy con readme2.txt
+Second file for test
+        1 file(s) copied.
+
+C:\Users\user1\abc\new-test-1\test-1>git checkout
+Your branch is up to date with 'origin/master'.
+
+C:\Users\user1\abc\new-test-1\test-1>git checkout fb1
+Switched to a new branch 'fb1'
+Branch 'fb1' set up to track remote branch 'fb1' from 'origin'.
+
+C:\Users\user1\abc\new-test-1\test-1>git add readme2.txt
+
+C:\Users\user1\abc\new-test-1\test-1>git status
+On branch fb1
+Your branch is up to date with 'origin/fb1'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   readme2.txt
+
+
+C:\Users\user1\abc\new-test-1\test-1>git commit -m "Second Commit"
+[fb1 5556a9c] Second Commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme2.txt
+
+C:\Users\user1\abc\new-test-1\test-1>git push -u
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 299 bytes | 59.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pnvijay123/test-1.git
+   4440057..5556a9c  fb1 -> fb1
+Branch 'fb1' set up to track remote branch 'fb1' from 'origin'.
+
+C:\Users\user1\abc\new-test-1\test-1>
